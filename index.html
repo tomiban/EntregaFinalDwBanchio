@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="proyecto-final\css\styles.css" />
+		<link rel="stylesheet" href="css\styles.css" />
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
@@ -12,7 +12,11 @@
 			crossorigin="anonymous" />
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="favicon" href="img/favicon.png" />
 		<title>🐾La Huellita</title>
 	</head>
 	<body>
@@ -20,9 +24,15 @@
 			<!-- Navbar  -->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
 				<div class="container-fluid">
-					<a class="navbar-brand" href="#">
-						<span class="text-white fs-3">🐾 La Huellita</span></a
-					>
+					<a class="navbar-brand" href="./index.html">
+						<img
+							src="./img/logo-verde.png"
+							width="50"
+							height="40"
+							class="d-inline-block align-top"
+							alt="" />
+						<span class="text-white fs-3 font-monospace mx-2">LA HUELLITA</span>
+					</a>
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -38,111 +48,182 @@
 						<div class="mx-auto"></div>
 						<ul class="navbar-nav">
 							<li class="nav-item">
-								<a class="nav-link text-white" href="#">Inicio</a>
+								<a class="nav-link text-white" href="./index.html">Inicio</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="#">Profesionales</a>
+								<a class="nav-link text-white" href="./html/nosotros.html"
+									>Nosotros</a
+								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="#">Servicios</a>
+								<a class="nav-link text-white" href="./html/servicios.html"
+									>Servicios</a
+								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="#">Adopción</a>
+								<a class="nav-link text-white" href="./html/contacto.html"
+									>Contacto</a
+								>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link text-white" href="#">Contacto</a>
+								<a class="nav-link text-white" href="./html/tienda.html"
+									>Tienda</a
+								>
 							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
+
 			<!-- banner -->
-			<div
-				class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+			<div class="banner-image w-100 vh-100 d-flex">
 				<div class="content text-center">
 					<h1 class="">La Huellita</h1>
 				</div>
 			</div>
 		</header>
 
-		<main class="container-fluid">
-			<!-- <div class="container my-5 d-grip gap-5">
-				<div class="p-5 border">
-					<p>
-						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-						animi blanditiis ab dignissimos voluptate, assumenda quibusdam.
-						Blanditiis magnam necessitatibus, quod libero maiores a fuga labore
-						debitis, quaerat beatae incidunt aspernatur!
-					</p>
+		<main>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="card-group">
+						<div class="card col-lg-3">
+							<img
+								class="card-img-top"
+								src="img/perro-saludando.jpg"
+								alt="Card image cap" />
+							<div class="card-body d-flex flex-column justify-content-center">
+								<h5 class="card-title text-center">Bienvenidos!</h5>
+								<p class="card-text text-center">
+									Somos una clínica veterinaria que se preocupa por la salud y
+									la integridad de tus mascotas. Contamos con urgencias
+									veterinarias 24 hrs.
+								</p>
+
+								<small class="text-center"><a href="">Ver más</a></small>
+							</div>
+						</div>
+
+						<div class="card col-lg-3">
+							<div class="card-body d-flex flex-column justify-content-center">
+								<h5 class="card-title text-center">Nosotros</h5>
+								<p class="card-text text-center">
+									Llevamos más de 15 años cuidando el bienestar animal de los
+									más pequeños. Conoce quienes somos, médicos veterinarios,
+									nuestra historia, misión y visión. Ver más
+								</p>
+
+								<small class="text-center"><a href="">Ver más</a></small>
+							</div>
+							<img
+								class="card-img-bottom"
+								src="img\gato-negro.jpg"
+								alt="Card image cap" />
+						</div>
+
+						<div class="card col-lg-3">
+							<img
+								class="card-img-top"
+								src="img/hamster3.jpg"
+								alt="Card image cap" />
+							<div class="card-body d-flex flex-column justify-content-center">
+								<h5 class="card-title text-center">Servicios</h5>
+								<p class="card-text text-center">
+									Medicina preventiva, consulta, cirugía, radiología,
+									laboratorio, kinesiología, estética, y los mejores productos
+									para tus mascotas...
+								</p>
+
+								<small class="text-center"><a href="">Ver más</a></small>
+							</div>
+						</div>
+
+						<div class="card col-lg-3">
+							<div class="card-body d-flex flex-column justify-content-center">
+								<h5 class="card-title text-center">Contactanos</h5>
+								<p class="card-text text-center">
+									Urgencias (24 hrs.) 55-5360-3311 / 55-5240-0404 / 55-8841-5819
+									Datos de contacto Clínica Veterinaria. Ver más
+								</p>
+
+								<small class="text-center"><a href="">Ver más</a></small>
+							</div>
+							<img
+								class="card-img-bottom"
+								src="img\contacto.jpg"
+								alt="Card image cap" />
+						</div>
+					</div>
 				</div>
-			</div> -->
 
-    <div class="container">
-<div class="row m-3">
-    <div class="card-group">
-        <div class="card col-lg-3 ">
-            <img class="card-img-top" src="proyecto-final\img\gato-banner.jpg" alt="Card image cap" />
-            <div class="card-body">
-                <h5 class="card-title">Bienvenidos!</h5>
-                <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This content is a little bit
-                    longer.
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-            </div>
-        </div>
-        <div class="card col-lg-3 p-3">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    This card has supporting text below as a natural lead-in to
-                    additional content.
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-            </div>
-        </div>
-        <div class="card col-lg-3 p-3">
-            <img class="card-img-top" src="..." alt="Card image cap" />
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer content
-                    than the first to show that equal height action.
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-            </div>
-        </div>
-        <div class="card col-lg-3 p-3">
-            <img class="card-img-top" src="" alt="Card image cap" />
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content. This card has even longer content
-                    than the first to show that equal height action.
-                </p>
-                <p class="card-text">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-    </div>
-
-
+				<div class="row d-flex justify-content-center">
+					<div
+						class="col-12 d-flex flex-column align-items-center justify-content-center"
+						id="shopImg">
+						<h4>¡Los mejores productos para tus mascotas!</h4>
+						<button id="btnComprar">TIENDA <span></span></button>
+					</div>
+				</div>
+			</div>
 		</main>
 
-		<footer></footer>
+		<footer>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6 d-flex flex-column">
+						<div class="m-2">
+							<i class="fa-solid fa-map-location-dot fa-lg text-white"></i>
+							<a
+								class="text-decoration-none"
+								href="https://goo.gl/maps/wctZ4tS6RAtJxJUK6"
+								><small class="text-white mx-2"
+									>Av. Colonizadores 123. Esperanza, Santa Fe.</small
+								></a
+							>
+						</div>
+						<div class="m-2">
+							<i class="fa-solid fa-phone fa-lg text-white"></i>
+							<a class="text-decoration-none" href="tel:54 03496 23123"
+								><small class="text-white mx-2">+54 03496 23123</small></a
+							>
+						</div>
+						<div class="m-2">
+							<i class="fa-solid fa-envelope fa-lg text-white"></i>
+							<a
+								class="text-decoration-none"
+								href="mailto:lahuellitaveterinaria@company.com"
+								><small class="text-white mx-2"
+									>lahuellitaveterinaria@company.com</small
+								></a
+							>
+						</div>
+					</div>
+
+					<div
+						class="col-6 d-flex flex-column align-items-center justify-content-center">
+						<div><h5 class="text-white">¡No te olvides de seguirnos en nuestras redes!</h5></div>
+
+						<div class="d-flex align-items-center">
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-instagram fa-2xl text-white"></i
+								></a>
+							</div>
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-twitter fa-2xl text-white"></i
+								></a>
+							</div>
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-linkedin fa-2xl text-white"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script type="text/javascript">
