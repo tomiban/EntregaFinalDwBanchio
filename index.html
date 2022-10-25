@@ -22,140 +22,170 @@
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
 			rel="stylesheet" />
-
+		<!-- 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ -->
 		<title>🐾La Huellita</title>
 	</head>
 	<body>
-		<header>
+		<header class="container-fluid">
 			<!-- Navbar  -->
-			<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-				<div class="container-fluid">
-					<a class="navbar-brand" href="./index.html">
-						<img
-							src="./img/logo-verde.png"
-							width="50"
-							height="40"
-							class="d-inline-block align-top"
-							alt="" />
-						<span class="text-white fs-3 font-monospace mx-2">LA HUELLITA</span>
-					</a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarNav"
-						aria-controls="navbarNav"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+			<div class="row">
+				<nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="./index.html">
+							<img
+								src="./img/logo-verde.png"
+								width="50"
+								height="40"
+								class="d-inline-block align-top"
+								alt="" />
+							<span class="text-white fs-3 font-monospace mx-2"
+								>LA HUELLITA</span
+							>
+						</a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<div class="mx-auto"></div>
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link text-white" href="./index.html">Inicio</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="./html/nosotros.html"
-									>Nosotros</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="./html/servicios.html"
-									>Servicios</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="./html/contacto.html"
-									>Contacto</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link text-white" href="./html/tienda.html"
-									>Tienda</a
-								>
-							</li>
-						</ul>
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<div class="mx-auto"></div>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link text-white" href="./index.html">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="./html/nosotros.html"
+										>Nosotros</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="./html/servicios.html"
+										>Servicios</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="./html/contacto.html"
+										>Contacto</a
+									>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white" href="./html/tienda.html"
+										>Tienda</a
+									>
+								</li>
+							</ul>
+						</div>
 					</div>
+				</nav>
+			</div>
+
+			<!-- Banner -->
+			<div class="row">
+				<div
+					class="banner-image vh-100 d-flex flex-column align-items-center justify-content-around">
+					<h1 class="text-white text-center">La Huellita</h1>
+
+					<p class="text-white text-center fs-3">
+						Somos una clínica veterinaria que se preocupa por la salud y la
+						integridad de tus mascotas. Contamos con urgencias veterinarias 24
+						hrs.
+					</p>
 				</div>
-			</nav>
-
-			<!-- banner -->
-			<div
-				class="banner-image vh-100 d-flex flex-column align-items-center justify-content-around">
-				<h1 class="text-white text-center">La Huellita</h1>
-
-				<p class="text-white text-center fs-3">
-					Somos una clínica veterinaria que se preocupa por la salud y la
-					integridad de tus mascotas. Contamos con urgencias veterinarias 24
-					hrs.
-				</p>
 			</div>
 		</header>
 
 		<main>
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-3 p-0 w-30">
-						<img
-							class="img-fluid h-100"
-							src="./img/perro-saludando.jpg"
-							alt="" />
-					</div>
-					<div class="col-lg-9">
-						<div class="row">
-							<div
-								style="background-color: #12100e"
-								class="col-lg-4 p-0 d-flex flex-column align-items-center justify-content-center">
-								<div class="gato">
-									
-								</div>
-
-								<div>
-									<p class="text-white text-center p-3 cardText">
-										Llevamos más de 15 años cuidando el bienestar animal de los
-										más pequeños. Conoce quienes somos, médicos veterinarios,
-										nuestra historia, misión y visión.
-									</p>
-								</div>
-							</div>
-
-							<div
-								style="background-color: #451f55"
-								class="col-lg-4 p-0 d-flex flex-column align-items-center justify-content-center">
-								<p class="text-white text-center p-3 cardText">
-									Medicina preventiva, consulta, cirugía, radiología,
-									laboratorio, kinesiología, estética, y los mejores productos
-								</p>
-								<div class="hamster">
-									
-								</div>
-							</div>
-
-							<div
-								style="background-color: #004e89"
-								class="col-4 p-0 d-flex flex-column align-items-center justify-content-center">
-								<div class="contacto">
-									
-								</div>
-								<div>
-									<p class="text-white text-center p-3 cardText">
-										Urgencias (24 hrs.) 55-5360-3311 / 55-5240-0404 /
-										55-8841-5819 Datos de contacto Clínica Veterinaria.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="row d-flex justify-content-center">
+					<div
+						class="col-lg-12 d-flex justify-content-center"
+						style="height: 10em; background-color: #1b1f28">
 						<div
-							class="col-12 d-flex flex-column align-items-center justify-content-center"
-							id="shopImg">
-							<h4>¡Los mejores productos para tus mascotas!</h4>
-							<button id="btnComprar">TIENDA <span></span></button>
+							class="semi-circle d-flex flex-column justify-content-end align-items-center">
+							<div class="py-1">
+								<i class="fa-solid fa-paw fa-2xl"></i>
+							</div>
 						</div>
+					</div>
+				</div>
+
+				<div class="row" style="background-color: #1b1f28">
+					<div class="main-img vh-100 position-relative">
+						<div
+							style="position: absolute; top: 20%; left: 38%; line-height: 1">
+							<p style="color: #f74e02; font-size: 5rem; font-weight: bold">
+								La mejor atención
+							</p>
+							<p
+								class="text-center"
+								style="color: white; font-size: 4rem; font-weight: bold">
+								Para tu mejor amigo
+							</p>
+						</div>
+
+						<div
+							class="position-absolute col-7"
+							style="position: absolute; top: 58%; left: 38%">
+							<div class="row">
+								<div class="col-4">
+									<div
+										class="card shadow-lg mb-5 rounded"
+										style="background-color: white; height: 14rem">
+										<div class="card-body">
+											<h5>NOSOTROS</h5>
+											<p style="text-align: justify">
+												Llevamos más de 15 años cuidando el bienestar animal.
+												Conoce quienes somos, nuestra historia, misión y visión.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div
+										class="card shadow-lg p-3 mb-5 rounded"
+										style="background-color: #f74e02; height: 14rem">
+										<div class="card-body">
+											<h5>SERVICIOS</h5>
+											<p style="text-align: justify">
+												Medicina preventiva, consulta, cirugía, radiología,
+												laboratorio, kinesiología, estética, y los mejores
+												productos
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div
+										class="card shadow-lg p-3 mb-5 rounded"
+										style="background-color: #07b4d9; height: 14rem">
+										<div class="card-body">
+											<h5>CONTACTO</h5>
+											<p style="text-align: justify">
+												Urgencias (24 hrs.) 55-5360-3311 / 55-5240-0404 /
+												55-8841-5819 Datos de contacto Clínica Veterinaria.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row d-flex justify-content-center">
+					<div
+						class="col-12 d-flex flex-column align-items-center justify-content-center"
+						id="shopImg">
+						<h4>¡Los mejores productos para tus mascotas!</h4>
+						<button id="btnComprar">TIENDA <span></span></button>
 					</div>
 				</div>
 			</div>
@@ -234,6 +264,7 @@
 					nav.classList.remove('bg-dark', 'shadow');
 				}
 			});
+			AOS.init();
 		</script>
 	</body>
 </html>
