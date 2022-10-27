@@ -149,5 +149,57 @@ height: 15em;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: contain;
-
+	background-position: -50px;
 }
+
+.card-body {
+	display: block;
+}
+
+.card-body p {
+	hyphens: auto;
+	padding: 5px;
+}
+
+.card-body button:hover {
+	background-color: #06c4a400;
+}
+
+
+#pattern {
+	background-image: url('../img/sivet-fondo-huesos2.jpg');
+	width: 100%;
+}
+
+#shopImg {
+	background-image: url('../img/accesorios.jpg');
+	-webkit-background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	backdrop-filter: blur(20px);
+}
+
+#shop {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	width: 45%;
+	padding: 40px 0;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 70px;border-top-left-radius: 70px;
+	background-color: rgb(0, 0, 0, 0.3);
+	color: #fff;
+	border: 10px inset #fff;
+	font-weight: bold;
+}
+
+#shop h4 {
+	padding: 0 8%;
+}
+
+
