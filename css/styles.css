@@ -205,3 +205,18 @@ height: 15em;
 .carousel-item {
 	max-height: 35rem;;
 }
+
+.us-body {
+	background-color:  #ECEBE4;
+	background-image: url('../img/paw-pattern2.png');
+	background-size: 50% 50%;
+
+}
+
+.text-us {
+	color: #728288;
+	padding: 3px;
+	width: 100%;
+	font-weight: bold;
+	text-align: justify;
+}

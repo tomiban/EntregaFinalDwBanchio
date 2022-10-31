@@ -6,10 +6,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/styles.css" />
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
 			crossorigin="anonymous" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"></script>
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -18,7 +22,7 @@
 			referrerpolicy="no-referrer" />
 		<title>La Huellita</title>
 	</head>
-	<body>
+	<body class="us-body">
 		<header class="container-fluid">
 			<div class="row">
 				<nav
@@ -80,52 +84,156 @@
 		</header>
 
 		<main>
+			<!-- Carousel -->
 			<div class="container-fluid">
 				<div class="row">
 					<div
 						id="carouselExampleFade"
 						class="carousel slide carousel-fade p-0"
 						data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          </div>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"></button>
+							<button
+								type="button"
+								data-bs-target="#carouselExampleIndicators"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"></button>
+						</div>
 						<div class="carousel-inner">
-							<div class="carousel-item active">
+							<div class="carousel-item active" data-bs-interval="4000">
 								<img
 									src="../img/hero-slide-2.jpg"
 									class="d-block w-100"
 									alt="..." />
+								<div class="postion-relative text-white">
+									<h5
+										class="position-absolute top-50 start-50 translate-middle fs-1 fw-bold" style="color: #ff5100;">
+										PEQUEÑOS ANIMALES
+									</h5>
+									<p
+										class="my-5 position-absolute top-50 start-50 translate-middle fs-5" >
+										Servicio medico veterinario integral
+									</p>
+								</div>
 							</div>
-							<div class="carousel-item">
+							<div class="carousel-item" data-bs-interval="4000">
 								<img
 									src="../img/shutterstock_1284183259-min.jpg"
 									class="d-block w-100"
 									alt="..." />
+
+								<div class="postion-relative text-white text-nowrap">
+									<h5
+										class="position-absolute top-50 start-50 translate-middle fs-1 fw-bold" style="color: #ff5100;">
+										CUERPO MEDICO ESPECIALIZADO
+									</h5>
+									<p
+										class="my-5 position-absolute top-50 start-50 translate-middle fs-5">
+										Con atención 24 hs los 365 días del año
+									</p>
+								</div>
 							</div>
-							<div class="carousel-item">
+							<div class="carousel-item" data-bs-interval="4000">
 								<img
 									src="../img/shutterstock_1311408713-min.jpg"
 									class="d-block w-100"
 									alt="..." />
+								<div class="postion-relative text-white w-100 text-nowrap">
+									<h5
+										class="position-absolute top-50 start-50 translate-middle fs-1 fw-bold" style="color: #ff5100;">
+										SERVICIOS ESPECIALIZADOS
+									</h5>
+									<p
+										class="my-5 position-absolute top-50 start-50 translate-middle fs-5" style="color: #DADDD8;">
+										Clinica, cirugia, semiología, kinesiología general y
+										especializada
+									</p>
+								</div>
 							</div>
 						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carouselExampleFade"
+							data-bs-slide="prev">
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carouselExampleFade"
+							data-bs-slide="next">
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
 					</div>
 				</div>
 			</div>
 
-			<div class="container vh-100 my-5">
-				<div class="row d-flex justify-content-around align-items-center">
-					<div class="col-5 m-2 my-5">
+			<!-- Texto -->
+			<div class="container-fluid" style="background-color: #ffff">
+				<h1 class="text-center fw-bold py-4" style="color: #03a58a">SOBRE NOSOTROS</h1>
+				<div class="row">
+					<div class="col-12 col-lg-7 px-5">
+						<h6 class="lead font-monospace my-4" style="color: #f74e02">
+							BIENVENIDOS
+						</h6>
+						<h2 class="fw-bold" style="color: #171e43">
+							La Huellita - Clínica veterinaria de pequeños animales
+						</h2>
+						<p class="text-us">
+							En Mayo de 2015 inauguramos La Huellita Veterinaria
+						</p>
+						<p class="text-us">
+							Nuestro objetivo es ser el centro de emergencias y servicios
+							complementarios en el que su veterinario confía, proporcionándole
+							la atención que sus pacientes necesitan.
+						</p>
+						<p class="text-us">
+							Ofrecemos a tu veterinaria servicios de excelencia que nos
+							distingan del resto y generen que tus clientes queden satisfechos
+							al volver a tu clínica.
+						</p>
+						<p class="text-us">
+							Los profesionales que prestan servicios en la huellita poseen
+							capacitación continua para estar preparados para todos los
+							requerimientos de las mascotas.
+						</p>
+						<p class="text-us">Conocelos de primera mano, podran contactarlos para que resuelvan sus inquietudes.</p>
+					</div>
+					<div class="col-12 col-lg-5 my-3 text-center" >
+						<img  src="../img/perro-saludando.png" alt=""/>
+					</div>
+				</div>
+			</div>
+			<!-- Cards -->
+			<div class="container-fluid my-2">
+				<div class="row d-flex justify-content-around  align-items-center">
+					<div class="col-12 col-md-6 col-lg-5 my-4">
 						<div
 							class="card border border-light shadow-lg"
 							style="border-radius: 15px">
-							<div class="card-body p-3">
+							<div class="card-body p-3" style="border-radius: 15px">
 								<div class="d-flex align-items-center text-black">
 									<div class="flex-shrink-0">
 										<img
-											src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+											src="../img/profile-3.jpg"
 											alt="Generic placeholder image"
 											class="img-fluid rounded-circle border border-dark"
 											style="width: 180px" />
@@ -145,13 +253,19 @@
 												</p>
 												<div class="d-flex justify-content-center pt-3">
 													<div class="mx-3">
-														<i class="fa-solid fa-phone fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-phone fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-solid fa-envelope fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-envelope fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-brands fa-linkedin fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-brands fa-linkedin fa-xl"></i
+														></a>
 													</div>
 												</div>
 											</div>
@@ -162,7 +276,7 @@
 						</div>
 					</div>
 
-					<div class="col-5 my-5">
+					<div class="col-12 col-md-6 col-lg-5 my-4">
 						<div
 							class="card border border-light shadow-lg"
 							style="border-radius: 15px">
@@ -170,7 +284,7 @@
 								<div class="d-flex align-items-center text-black">
 									<div class="flex-shrink-0">
 										<img
-											src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+											src="../img/profile-2.jpg"
 											alt="Generic placeholder image"
 											class="img-fluid rounded-circle border border-dark"
 											style="width: 180px" />
@@ -190,13 +304,19 @@
 												</p>
 												<div class="d-flex justify-content-center pt-3">
 													<div class="mx-3">
-														<i class="fa-solid fa-phone fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-phone fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-solid fa-envelope fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-envelope fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-brands fa-linkedin fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-brands fa-linkedin fa-xl"></i
+														></a>
 													</div>
 												</div>
 											</div>
@@ -207,7 +327,7 @@
 						</div>
 					</div>
 
-					<div class="col-5 my-3">
+					<div class="col-12 col-md-6 col-lg-5 my-4">
 						<div
 							class="card border border-light shadow-lg"
 							style="border-radius: 15px">
@@ -215,7 +335,7 @@
 								<div class="d-flex align-items-center text-black">
 									<div class="flex-shrink-0">
 										<img
-											src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+											src="../img/profile-4.jpg"
 											alt="Generic placeholder image"
 											class="img-fluid rounded-circle border border-dark"
 											style="width: 180px" />
@@ -235,13 +355,19 @@
 												</p>
 												<div class="d-flex justify-content-center pt-3">
 													<div class="mx-3">
-														<i class="fa-solid fa-phone fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-phone fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-solid fa-envelope fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-envelope fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-brands fa-linkedin fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-brands fa-linkedin fa-xl"></i
+														></a>
 													</div>
 												</div>
 											</div>
@@ -252,7 +378,7 @@
 						</div>
 					</div>
 
-					<div class="col-5 my-3">
+					<div class="col-12 col-md-6 col-lg-5 my-4">
 						<div
 							class="card border border-light shadow-lg"
 							style="border-radius: 15px">
@@ -260,7 +386,7 @@
 								<div class="d-flex align-items-center text-black">
 									<div class="flex-shrink-0">
 										<img
-											src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-profiles/avatar-1.webp"
+											src="../img/profile-1.jpg"
 											alt="Generic placeholder image"
 											class="img-fluid rounded-circle border border-dark"
 											style="width: 180px" />
@@ -280,13 +406,19 @@
 												</p>
 												<div class="d-flex justify-content-center pt-3">
 													<div class="mx-3">
-														<i class="fa-solid fa-phone fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-phone fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-solid fa-envelope fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-solid fa-envelope fa-lg"></i
+														></a>
 													</div>
 													<div class="mx-3">
-														<i class="fa-brands fa-linkedin fa-xl"></i>
+														<a class="text-dark" href=""
+															><i class="fa-brands fa-linkedin fa-xl"></i
+														></a>
 													</div>
 												</div>
 											</div>
@@ -361,6 +493,5 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/bootstrap.bundle.min.js"></script>
 	</body>
 </html>
