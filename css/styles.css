@@ -146,10 +146,11 @@ height: 15em;
 
 .main-img {
 	background-image: url("../img/siberiano.jpg");
-	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
 	background-size: contain;
-	background-position: -50px;
+	background-position: -20%;
 }
 
 .card-body {
@@ -219,4 +220,24 @@ height: 15em;
 	width: 100%;
 	font-weight: bold;
 	text-align: justify;
+}
+
+
+
+@media (max-width: 600px){
+	.main-img {
+		background-image: url("");
+	}
+
+	#divTitulo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	#cards {
+		justify-content: center!important;
+	}
+
+
 }
