@@ -20,9 +20,15 @@
 			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer" />
+		<link rel="favicon" href="img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet" />
 		<title>La Huellita</title>
 	</head>
-	<body class="us-body">
+	<body class="paw-pattern">
 		<header class="container-fluid">
 			<div class="row">
 				<nav
@@ -54,20 +60,30 @@
 							<div class="mx-auto"></div>
 							<ul class="navbar-nav">
 								<li class="nav-item">
-									<a class="nav-link text-white" href="../index.html">Inicio</a>
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="../index.html"
+										>Inicio</a
+									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="./html/nosotros.html"
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./html/nosotros.html"
 										>Nosotros</a
 									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="./html/servicios.html"
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./html/servicios.html"
 										>Servicios</a
 									>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link text-white" href="./html/contacto.html"
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./html/contacto.html"
 										>Contacto</a
 									>
 								</li>
@@ -116,13 +132,13 @@
 									src="../img/hero-slide-2.jpg"
 									class="d-block w-100"
 									alt="..." />
-								<div class="postion-relative text-white  text-nowrap">
+								<div class="postion-relative text-white text-nowrap">
 									<h5
-										class="position-absolute translate-middle fw-bold" style="color: #ff5100; font-size: 4rem; top: 45%; left: 50%;">
+										class="position-absolute translate-middle fw-bold carousel__title">
 										PEQUEÑOS ANIMALES
 									</h5>
 									<p
-										class="my-5 p-5 position-absolute top-50 start-50 translate-middle fs-5" >
+										class="my-5 p-5 position-absolute top-50 start-50 translate-middle fs-5 carousel__text">
 										Servicio medico veterinario integral
 									</p>
 								</div>
@@ -135,11 +151,11 @@
 
 								<div class="postion-relative text-white text-nowrap">
 									<h5
-										class="position-absolute translate-middle fw-bold" style="color:  #ff5100; font-size: 4rem; top: 45%; left: 50%;">
+										class="position-absolute translate-middle fw-bold carousel__title">
 										CUERPO MEDICO ESPECIALIZADO
 									</h5>
 									<p
-										class="my-5 position-absolute top-50 start-50 translate-middle fs-5">
+										class="carousel__text my-5 position-absolute top-50 start-50 translate-middle fs-5">
 										Con atención 24 hs los 365 días del año
 									</p>
 								</div>
@@ -151,11 +167,11 @@
 									alt="..." />
 								<div class="postion-relative text-white w-100 text-nowrap">
 									<h5
-										class="position-absolute translate-middle fw-bold" style="color:  #ff5100; font-size: 4rem; top: 45%; left: 50%;">
+										class="position-absolute translate-middle fw-bold carousel__title">
 										SERVICIOS ESPECIALIZADOS
 									</h5>
 									<p
-										class="my-5 position-absolute top-50 start-50 translate-middle fs-5" style="color: #DADDD8;">
+										class="my-5 position-absolute top-50 start-50 translate-middle fs-5 carousel__text">
 										Clinica, cirugia, semiología, kinesiología general y
 										especializada
 									</p>
@@ -187,44 +203,48 @@
 			</div>
 
 			<!-- Texto -->
-			<div class="container-fluid" style="background-color: #ffff">
-				<h1 class="text-center fw-bold py-4" style="color: #03a58a">Sobre Nosotros</h1>
+			<div class="container-fluid main--white">
+				<h1 class="text-center fw-bold py-4">Sobre Nosotros</h1>
 				<div class="row">
 					<div class="col-12 col-lg-7 px-5">
-						<h6 class="lead font-monospace my-4" style="color: #f74e02">
+						<h6 class="fs-2 font-monospace my-4 main__title--red">
 							BIENVENIDOS
 						</h6>
-						<h2 class="fw-bold" style="color: #171e43">
+						<h2 class="fw-bold main__title--darkblue">
 							La Huellita - Clínica veterinaria de pequeños animales
 						</h2>
-						<p class="text-us">
+						<p class="main__text">
 							En Mayo de 2015 inauguramos La Huellita Veterinaria
 						</p>
-						<p class="text-us">
+						<p class="main__text">
 							Nuestro objetivo es ser el centro de emergencias y servicios
 							complementarios en el que su veterinario confía, proporcionándole
 							la atención que sus pacientes necesitan.
 						</p>
-						<p class="text-us">
+						<p class="main__text">
 							Ofrecemos a tu veterinaria servicios de excelencia que nos
 							distingan del resto y generen que tus clientes queden satisfechos
 							al volver a tu clínica.
 						</p>
-						<p class="text-us">
+						<p class="main__text">
 							Los profesionales que prestan servicios en la huellita poseen
 							capacitación continua para estar preparados para todos los
 							requerimientos de las mascotas.
 						</p>
-						<p class="text-us">Conocelos de primera mano, podran contactarlos para que resuelvan sus inquietudes.</p>
+						<p class="main__text">
+							Conocelos de primera mano, podran contactarlos para que resuelvan
+							sus inquietudes.
+						</p>
 					</div>
-					<div class="col-12 col-lg-5 my-3 text-center" >
-						<img  src="../img/perro-saludando.png" alt=""/>
+					<div class="col-12 col-lg-5 my-3 text-center">
+						<img src="../img/perro-saludando.png" alt="" />
 					</div>
 				</div>
 			</div>
+
 			<!-- Cards -->
 			<div class="container-fluid my-2">
-				<div class="row d-flex justify-content-around  align-items-center">
+				<div class="row d-flex justify-content-around align-items-center">
 					<div class="col-12 col-md-6 col-lg-5 my-4">
 						<div
 							class="card border border-light shadow-lg"
@@ -235,12 +255,11 @@
 										<img
 											src="../img/profile-3.jpg"
 											alt="Generic placeholder image"
-											class="img-fluid rounded-circle border border-dark"
-											style="width: 180px" />
+											class="img-fluid rounded-circle border border-dark card__img"/>
 									</div>
 									<div class="flex-grow-1 ms-3">
 										<h5 class="mb-1">Yazmin Caseres</h5>
-										<p class="mx-1 my-0 pb-0 fw-bold" style="color: #e41212">
+										<p class="mx-1 my-0 pb-0 fw-bold card__title">
 											Etología Clínica
 										</p>
 										<div
@@ -286,12 +305,12 @@
 										<img
 											src="../img/profile-2.jpg"
 											alt="Generic placeholder image"
-											class="img-fluid rounded-circle border border-dark"
-											style="width: 180px" />
+											class="card__img rounded-circle border border-dark"
+											 />
 									</div>
 									<div class="flex-grow-1 ms-3">
 										<h5 class="mb-1">Ximena Fermia</h5>
-										<p class="mx-1 my-0 pb-0 fw-bold" style="color: #e41212">
+										<p class="mx-1 my-0 pb-0 fw-bold card__title">
 											Medicina Felina
 										</p>
 										<div
@@ -337,12 +356,11 @@
 										<img
 											src="../img/profile-4.jpg"
 											alt="Generic placeholder image"
-											class="img-fluid rounded-circle border border-dark"
-											style="width: 180px" />
+											class="img-fluid rounded-circle border border-dark card__img"/>
 									</div>
 									<div class="flex-grow-1 ms-3">
 										<h5 class="mb-1">Luciano Corrales</h5>
-										<p class="mx-1 my-0 pb-0 fw-bold" style="color: #e41212">
+										<p class="mx-1 my-0 pb-0 fw-bold card__title">
 											Cirugía
 										</p>
 										<div
@@ -388,12 +406,11 @@
 										<img
 											src="../img/profile-1.jpg"
 											alt="Generic placeholder image"
-											class="img-fluid rounded-circle border border-dark"
-											style="width: 180px" />
+											class="rounded-circle border border-dark card__img"/>
 									</div>
 									<div class="flex-grow-1 ms-3">
 										<h5 class="mb-1">Agustina Firpo</h5>
-										<p class="mx-1 my-0 pb-0 fw-bold" style="color: #e41212">
+										<p class="mx-1 my-0 pb-0 fw-bold card__title">
 											Fisioterapia
 										</p>
 										<div
@@ -432,7 +449,7 @@
 			</div>
 		</main>
 
-		<footer>
+		<footer class="footer">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-6 d-flex flex-column p-4">

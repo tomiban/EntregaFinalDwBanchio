@@ -2,96 +2,253 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.banner-image {
+/* HOME */
+
+.banner {
 	background-image: url('../img/header-img.png');
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 }
 
-#btnComprar {
-	background-color: #7e04ef;
-	color: #ffffff;
-	border: #5e08b0;
-	border-radius: 10px;
-	padding: 20px 20px 20px 30px;
-	font-weight: 500;
-	font-size: 18px;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-	letter-spacing: 2px;
-	transition: all 0.5s;
-	cursor: pointer;
+.nav-link--turquesa {
+	border-bottom: #06c4a4 !important;
 }
 
-#btnComprar span {
-	cursor: pointer;
+.nav-link--turquesa:hover {
+	border-bottom: 2px solid #06c4a4 !important;
+	padding-bottom: 2px !important;
+}
+
+.banner__card {
+	width: 15rem;
+	background-color: #0007096a !important;
+}
+
+.separador {
+	height: 8em;
+}
+
+.separador--black {
+	background-color: #1b1f28;
+}
+
+.separador--darkblue {
+	background-color: #151e3f;
+}
+
+.separador__text--red {
+	color: #ff2f00;
+	font-size: 2.5em;
+	font-weight: bold;
+}
+
+.separador__img {
+	object-fit: fill;
+	width: 100%;
+	height: 100%;
+}
+
+.semi-circle {
+	width: 14rem;
+	height: 7rem;
+	background-color: white;
+	border-radius: 10rem 10rem 0 0;
+	transform: scaley(-1);
+}
+
+.main--black {
+	background-color: #1b1f28;
+}
+
+.main--white {
+	background-color: whitesmoke;
+}
+
+.main__img {
+	background-image: url('../img/siberiano.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: contain;
+	background-position: -20%;
+}
+
+.main__title {
+	font-weight: bold;
 	display: inline-block;
-	position: relative;
-	transition: 0.5s;
-	margin-left: 15px;
+	text-align: center;
 }
 
-#btnComprar span:after {
-	content: ' 🛒';
-	font-size: 20px;
-	position: absolute;
-	opacity: 0;
-	top: -16px;
-	right: -40px;
-	transition: 0.5s;
+.main__title--red {
+	color: #f74e02;
+	font-size: 5em;
 }
 
-#btnComprar:hover span {
-	padding-right: 5px;
-	padding-left: 10px;
+.main__title--white {
+	color: white;
+	font-size: 4em;
 }
 
-#btnComprar:hover span:after {
-	opacity: 1;
-	right: 0;
+.main__title--darkblue {
+	color: #171e43;
 }
 
-li a {
-	border-bottom: #06c4a4;
+.main__text {
+	color: #728288;
+	padding: 3px;
+	width: 100%;
+	font-weight: bold;
+	text-align: justify;
 }
 
-li a:hover {
-	border-bottom: 2px solid #06c4a4;
-	padding-bottom: 2px;
+.main__card {
+	height: 19rem;
 }
 
-#shopImg {
-	height: 380px;
+.card--turquese {
+	background-color: #04cfad;
+}
+
+.card--orange {
+	background-color: #f74e02;
+}
+
+.card-body p {
+	hyphens: auto;
+	padding: 5px;
+}
+
+.card-body__button:hover {
+	background-color: #06c4a400;
+}
+
+#shop {
 	background: rgba(20, 5, 5, 0.1) url('../img/accesorios.jpg');
 	background-blend-mode: darken;
 	background-position: center center;
 	background-repeat: no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
+	height: 100%;
+	backdrop-filter: blur(20px);
+	-webkit-background-size: cover;
 }
 
-#shopImg h4 {
+#shop__card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 5;
+	width: 65%;
+	padding: 60px 0;
+	border-top-left-radius: 70px;
+	border-bottom-right-radius: 70px;
+	border-top-left-radius: 70px;
+	background-color: rgb(0, 0, 0, 0.3);
+	color: #fff;
+	border: 10px inset #fff;
+	font-weight: bold;
+}
+
+.shop__title {
+	padding: 0 8%;
 	margin: 20px;
 	font-size: 35px;
 	color: rgb(255, 255, 255);
 }
 
-footer {
+.shop__btn--purple {
+	background-color: #7e04ef !important;
+	color: white !important;
+	padding: 15px 0px 15px 20px !important;
+	letter-spacing: 2px;
+	transition: all 0.5s !important;
+}
+
+.btn__span {
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	margin-left: 20px;
+}
+
+.btn__span:after {
+	content: ' 🛒';
+	font-size: 20px;
+	position: absolute;
+	opacity: 0;
+	top: -20px;
+	right: -40px;
+	transition: 0.5s;
+}
+
+.shop__btn--purple:hover .btn__span {
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.shop__btn--purple:hover .btn__span:after {
+	opacity: 1;
+	right: 0;
+}
+
+.footer {
 	background-color: #030027;
 }
 
-h3 {
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
+@media (max-width: 600px) {
+	.main__img {
+		background-image: url('');
+	}
+
+	#main__div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+	#cards {
+		justify-content: center !important;
+	}
 }
 
-.cardText {
-	font-family: 'Poppins', sans-serif;
+/* NOSOTROS*/
+
+.paw-pattern {
+	background-color: #ecebe4;
+	background-image: url('../img/paw-pattern2.png');
+	background-size: 50% 50%;
 }
+
+.carousel-item {
+	max-height: 35rem;
+}
+
+.carousel__title {
+	color: #04cfad;;
+	text-shadow: 1px 1px rgb(0, 0, 0);
+	font-size: 4rem;
+	top: 45%;
+	left: 50%;
+}
+
+.carousel__text {
+	text-shadow: 1px 1px rgb(25, 25, 25);
+	color: rgb(245, 245, 245);
+	font-weight: 800;
+}
+
+.card__img {
+	width: 180px;
+}
+
+.card__title {
+	color: #e41212
+}
+
+/* SHOP */
 
 .gato {
 	width: 100%;
@@ -113,131 +270,4 @@ h3 {
 	background-size: cover;
 	background-position: -45px 0px;
 	transform: scaleX(-1);
-}
-
-.contacto {
-	background-image: url('../img/contacto.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-	height: 100%;
-	width: 100%;
-	border-radius: 0px 0px 105px 100px;
-	border-color: 2px solid gray;
-}
-
-.separador {
-height: 15em;
-}
-
-.separador img {
-	object-fit: fill;
-	width:100%;
-	height:100%
-}
-
-.semi-circle {
-	width: 14rem;
-	height: 7rem;
-	background-color: white;
-	border-radius: 10rem 10rem 0 0;
-	transform: scaley(-1);
-}
-
-.main-img {
-	background-image: url("../img/siberiano.jpg");
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: contain;
-	background-position: -20%;
-}
-
-.card-body {
-	display: block;
-}
-
-.card-body p {
-	hyphens: auto;
-	padding: 5px;
-}
-
-.card-body button:hover {
-	background-color: #06c4a400;
-}
-
-
-#pattern {
-	background-image: url('../img/sivet-fondo-huesos2.jpg');
-	width: 100%;
-}
-
-#shopImg {
-	background-image: url('../img/accesorios.jpg');
-	-webkit-background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	height: 100%;
-	backdrop-filter: blur(20px);
-}
-
-#shop {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 5;
-	width: 45%;
-	padding: 40px 0;
-	border-top-left-radius: 70px;
-	border-bottom-right-radius: 70px;border-top-left-radius: 70px;
-	background-color: rgb(0, 0, 0, 0.3);
-	color: #fff;
-	border: 10px inset #fff;
-	font-weight: bold;
-}
-
-#shop h4 {
-	padding: 0 8%;
-}
-
-.carousel-item {
-	max-height: 35rem;;
-}
-
-.us-body {
-	background-color:  #ECEBE4;
-	background-image: url('../img/paw-pattern2.png');
-	background-size: 50% 50%;
-
-}
-
-.text-us {
-	color: #728288;
-	padding: 3px;
-	width: 100%;
-	font-weight: bold;
-	text-align: justify;
-}
-
-
-
-@media (max-width: 600px){
-	.main-img {
-		background-image: url("");
-	}
-
-	#divTitulo {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
-	#cards {
-		justify-content: center!important;
-	}
-
-
 }
