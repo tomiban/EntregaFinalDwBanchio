@@ -1,0 +1,14 @@
+@import './variables/variables';
+@import './mixins/mixin';
+@import "./componentes/gallery";
+@import "./componentes/container";
+@import "./componentes/card";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+

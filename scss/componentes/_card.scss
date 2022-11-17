@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    .card__img  {
+        position: relative;
+        transition: all 0.4s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    &:hover {
+        width: 100%;
+        transform: scale(1.1);
+    }   margin-top: 2rem;
+    }
+
+    .card__title {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .card__text {
+        margin-top: 1rem;
+        text-align: justify;
+        line-height: 2;
+        font-size: 14px;
+        padding: 3px;
+    }
+
+    &:hover {
+        background-color: #039e84de;
+        border-radius: 10px;
+      
+    }
+
+
+    
+}
