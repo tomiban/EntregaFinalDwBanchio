@@ -1,47 +1,46 @@
 .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    cursor: pointer;
-    overflow: hidden;
+    height: 100%;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important;
+    border: none !important;
+    cursor: pointer !important;
+    overflow: hidden !important;
     .card__img  {
-        position: relative;
-        transition: all 0.4s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        position: relative !important;
+        transition: all 0.4s !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
        
     &:hover {
-        width: 100%;
-        transform: scale(1.1);
-    }   margin-top: 2rem;
+        width: 100% !important;
+        transform: scale(1.1) !important;
+    }   margin-top: 2rem !important;
     }
 
     .card__title {
-        font-size: 1.3em;
-        text-transform: uppercase;
-        text-align: center;
-        margin-top: 1rem;
-        margin-bottom: 15px;
+        font-size: 1.3em !important;
+        text-transform: uppercase !important;
+        text-align: center !important; 
+        margin-top: 1rem !important;
+        margin-bottom: 15px !important;
     }
 
     .card__text {
-        margin-top: 1rem;
-        text-align: justify;
-        line-height: 2;
-        font-size: 14px;
-        padding: 3px;
+        margin-top: 1rem !important;
+        text-align: justify !important;
+        line-height: 2 !important;
+        font-size: 14px !important;
+        padding: 3px !important;
     }
 
     &:hover {
         background-color: #039e84de;
         border-radius: 10px;
-      
     }
 
-
-    
 }

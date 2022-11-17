@@ -5,10 +5,7 @@
   grid-auto-rows: 30rem;
   grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   grid-auto-flow: dense;
-}
-
-.featured {
-  grid-column: span 2;
+  margin: 50px 0px;
 }
 
 .container {
@@ -121,41 +118,71 @@
   }
 }
 
-.card {
+.container-na {
+  background-image: url("../../img/waves.png");
+  background-size: cover;
+  height: 25rem;
+  margin: 5em 0em 4em;
+}
+.container-na .title {
+  width: 50%;
+  height: 10em;
+  color: #ffffff;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  cursor: pointer;
-  overflow: hidden;
+}
+.container-na .title h1 {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+  font-size: 40px;
+  text-align: center;
+}
+.container-na .title p {
+  position: absolute;
+  top: 120%;
+  left: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card {
+  height: 100%;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 20px !important;
+  border: none !important;
+  cursor: pointer !important;
+  overflow: hidden !important;
 }
 .card .card__img {
-  position: relative;
-  transition: all 0.4s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+  position: relative !important;
+  transition: all 0.4s !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-top: 2rem !important;
 }
 .card .card__img:hover {
-  width: 100%;
-  transform: scale(1.1);
+  width: 100% !important;
+  transform: scale(1.1) !important;
 }
 .card .card__title {
-  font-size: 1.3em;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 15px;
+  font-size: 1.3em !important;
+  text-transform: uppercase !important;
+  text-align: center !important;
+  margin-top: 1rem !important;
+  margin-bottom: 15px !important;
 }
 .card .card__text {
-  margin-top: 1rem;
-  text-align: justify;
-  line-height: 2;
-  font-size: 14px;
-  padding: 3px;
+  margin-top: 1rem !important;
+  text-align: justify !important;
+  line-height: 2 !important;
+  font-size: 14px !important;
+  padding: 3px !important;
 }
 .card:hover {
   background-color: rgba(3, 158, 132, 0.8705882353);

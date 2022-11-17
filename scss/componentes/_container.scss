@@ -40,3 +40,37 @@
 		}
 	}
 }
+
+
+.container-na {
+	background-image: url("../../img/waves.png");
+	background-size: cover;
+	height: 25rem;
+	margin: 5em 0em 4em;
+	
+	
+	.title {
+		width: 50%;
+		height: 10em;
+		color: #ffffff;
+		position: relative;
+		h1 {
+			position: absolute;
+			top: 75%;
+			left: 10%;
+			font-size: 40px;
+			text-align: center;
+		}
+
+		p{
+			position: absolute;
+			top: 120%;
+			left: 10px;
+			padding: 10px;
+			font-size: 15px;
+			font-weight: bold;
+		}
+	}
+
+
+}
