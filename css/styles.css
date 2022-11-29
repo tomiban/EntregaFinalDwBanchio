@@ -9,6 +9,7 @@
 	background-size: cover;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	width: fit-content;
 }
 
 .nav-link--turquesa {
@@ -57,8 +58,12 @@
 	transform: scaley(-1);
 }
 
+#waves-img {
+	width: 100%;
+}
+
 .main--black {
-	background-color: #1b1f28;
+	background-color: #ebecf0;
 }
 
 .main--white {
@@ -68,26 +73,66 @@
 .main__img {
 	background-image: url('../img/siberiano.jpg');
 	background-repeat: no-repeat;
-	background-position: center center;
 	background-attachment: fixed;
 	background-size: contain;
-	background-position: -20%;
+	height: 40em;
+	background-color: #1b1f28;
+}
+
+#circle-img {
+	width: 60%;
+	position: absolute;
+	top: -100px;
+	left: 220px;
+	z-index: 3;
+	transition: scale 300ms;
+}
+
+#circle-img:hover {
+	scale: 1.1;
+	
+}
+
+.texto-img {
+	position: absolute;
+	top: 20px;
+	right: 30%;
+}
+
+.texto-img h2 {
+	font-weight: bold;
+	color: #06524B;
+}
+
+.texto-img p {
+ color: #15181a;
+}
+
+.contador {
+	font-size: 40px;
+	font-weight: bold;
+	color: #014F47;
 }
 
 .main__title {
 	font-weight: bold;
-	display: inline-block;
-	text-align: center;
+	position: relative;
+	margin-bottom: 7%;
 }
 
 .main__title--red {
 	color: #f74e02;
 	font-size: 5em;
+	position: absolute;
+	bottom: -0.1em;
+	left: 1.5em;
 }
 
 .main__title--white {
-	color: white;
+	color: #009f85;
 	font-size: 4em;
+	position: absolute;
+	left: 2.5em;
 }
 
 .main__title--darkblue {
@@ -130,7 +175,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 100%;
 	backdrop-filter: blur(20px);
 	-webkit-background-size: cover;
 }
@@ -203,12 +247,6 @@
 		background-image: url('');
 	}
 
-	#main__div {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-	}
 	#cards {
 		justify-content: center !important;
 	}
@@ -217,7 +255,7 @@
 /* NOSOTROS*/
 
 .paw-pattern {
-	background-color: #ecebe4;
+	background-color: #f2f6f5;
 	background-image: url('../img/paw-pattern2.png');
 	background-size: 50% 50%;
 }
@@ -227,7 +265,7 @@
 }
 
 .carousel__title {
-	color: #04cfad;;
+	color: #04cfad;
 	text-shadow: 1px 1px rgb(0, 0, 0);
 	font-size: 4rem;
 	top: 45%;
@@ -245,7 +283,7 @@
 }
 
 .card__title {
-	color: #e41212
+	color: #e41212;
 }
 
 /* SHOP */
