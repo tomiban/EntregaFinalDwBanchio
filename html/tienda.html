@@ -5,176 +5,398 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="../css/styles.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link rel="favicon" href="img/favicon.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous" />
 		<title>La Huellita</title>
 	</head>
 	<body>
-		<header>
-			<div class="nav-bar">
-				<div class="logo">
-					<a href="../index.html"
-						><img
-							src="../img/logo-verde.png"
-							alt=""
-							style="width: 50px; height: 50px"
-					/></a>
-				</div>
-				<div class="menu-nav">
-					<nav>
-						<input type="text" />
-						<button>Buscar</button>
-					</nav>
-				</div>
-			</div>
-			<div class="banner-tienda">
-				<img src="../img/SLIDER-WEB-1_Mesa-de-trabajo-1.png" alt="" />
-			</div>
+		<header style="height: 5em;">
+				<nav
+					class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-md-3">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="../index.html">
+							<img
+								src="../img/logo-verde.png"
+								width="50"
+								height="40"
+								class="d-inline-block align-top"
+								alt="" />
+							<span class="text-white fs-3 font-monospace mx-2"
+								>LA HUELLITA</span
+							>
+						</a>
+						<button
+							class="navbar-toggler"
+							type="button"
+							data-bs-toggle="collapse"
+							data-bs-target="#navbarNav"
+							aria-controls="navbarNav"
+							aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="navbarNav">
+							<div class="mx-auto"></div>
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="../index.html"
+										>Inicio</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./nosotros.html"
+										>Nosotros</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./servicios.html"
+										>Servicios</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./contacto.html"
+										>Contacto</a
+									>
+								</li>
+								<li class="nav-item">
+									<a
+										class="nav-link nav-link--turquesa text-white"
+										href="./tienda.html"
+										>Tienda</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 		</header>
 
 		<main>
-			
-			<div class="container-shop">
-				<div class="card-animales">
-					<img src="../img/perro-tienda.png" alt="" />
-					<p>Perros</p>
-				</div>
-				<div class="card-animales">
-					<img src="../img/gato-shop.png" alt="" />
-					<p>Gatos</p>
-				</div>
-				<div class="card-animales">
-					<img src="../img/roedor-shop.png" alt="" />
-					<p>Roedores</p>
-				</div>
-				<div class="card-animales">
-					<img src="../img/aves-shop.png" alt="" />
-					<p>Aves</p>
-				</div>
-				<div class="card-animales">
-                    <img src="../img/acuerio-shop.png" alt="" />
-                    <p>Acuario</p>
-                </div>
-			</div>
 
-			<h6>PROMOCIONES</h6>
-			<div class="container-shop">
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;" />
-					</div>
-					<div>
-						<h5>Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
-					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img src="../img/SLIDER-WEB-1_Mesa-de-trabajo-1.png" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="../img/SLIDER-WEB-nuevo_Mesa-de-trabajo-1.png" class="d-block w-100" alt="...">
+				  </div>
+				  <div class="carousel-item">
+					<img src="../img/SLIDER-WEB_Mesa-de-trabajo-1.png" class="d-block w-100" alt="...">
+				  </div>
 				</div>
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;"  />
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
+
+
+
+			<div class="container">
+				<div class="row mt-5 d-flex justify-content-center">
+					<div class="card col-2 border-0 border-0">
+						<img src="../img/perro-tienda.png" alt="" />
+						<div class="card-body">
+							 <p class="text-center">Perros</p>
+						</div>
 					</div>
-					<div>
-						<h5>Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
+					<div class="card col-2 border-0">
+						<img src="../img/gato-shop.png" alt="" />
+						<div class="card-body">
+							 <p class="text-center">Gatos</p>
+						</div>
 					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
-                </div>
-				
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;" />
+					<div class="card col-2 border-0">
+						<img src="../img/roedor-shop.png" alt="" />
+						<div class="card-body">
+							 <p class="text-center">Roedores</p>
+						</div>
 					</div>
-					<div>
-						<h5 >Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
+					<div class="card col-2 border-0">
+						<img src="../img/aves-shop.png" alt="" />
+						<div class="card-body">
+							 <p class="text-center">Aves</p>
+						</div>
 					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
+					<div class="card col-2 border-0">
+						<img src="../img/acuerio-shop.png" alt="" />
+						<div class="card-body">
+							 <p class="text-center">Acuario</p>
+						</div>
+					</div>
 				</div>
 			</div>
 
-            <h6>LO MÁS VENDIDO</h6>
-			<div class="container-shop">
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;" />
+
+			<div class="slide-container swiper">
+				<div class="slide-content">
+					<div class="card-wrapper swiper-wrapper">
+						
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+								<div class="card-image">
+								<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<img src="../img/balanceado.webp" alt="" class="card-img">
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
+						<div class="card swiper-slide">
+							<div class="image-content">
+								<span class="overlay"></span>
+
+								<div class="card-image">
+									<!--<img src="images/profile9.jpg" alt="" class="card-img">-->
+								</div>
+							</div>
+
+							<div class="card-content">
+								<h2 class="name">Balanceado</h2>
+								<p class="description">
+								Purina dog chow marca premium
+								</p>
+
+								<button class="button">COMPRAR</button>
+							</div>
+						</div>
 					</div>
-					<div>
-						<h5>Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
-					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
 				</div>
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;"  />
-					</div>
-					<div>
-						<h5>Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
-					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
-                </div>
-				
-				<div class="card-producto">
-					<div>
-						<img src="../img/balanceado.webp" alt="" style="width: 230px;" />
-					</div>
-					<div>
-						<h5 >Balanceado</h5>
-						<p>Purina dog chow marca premium</p>
-						<span>$500</span>
-					</div>
-                    <div>
-                        <button>-</button>
-                        <input type="text" />
-                        <button>+</button>
-                        <button>COMPRAR</button>
-                    </div>
-				</div>
+
+				<div class="swiper-button-next swiper-navBtn"></div>
+				<div class="swiper-button-prev swiper-navBtn"></div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</main>
 
-		<footer>
-			<div class="footer-data">
-				<p>Av. Los colonizadores 123, Esperanza, Santa Fe</p>
-				<p>+54 03496-231923</p>
-				<p>lahuellitaveterinaria@company.com</p>
-			</div>
-			<div class="footer-redes">
-				<p>No se olvide de seguirnos en nuestras redes!</p>
-				<i>Instragram</i>
-				<i>Twitter</i>
-				<i>Facebook</i>
-				<i>Linkedin</i>
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-6 d-flex flex-column p-4">
+						<div class="m-2">
+							<i class="fa-solid fa-map-location-dot fa-lg text-white"></i>
+							<a
+								class="text-decoration-none"
+								href="https://goo.gl/maps/wctZ4tS6RAtJxJUK6"
+								><small class="text-white mx-2"
+									>Av. Colonizadores 123. Esperanza, Santa Fe.</small
+								></a
+							>
+						</div>
+						<div class="m-2">
+							<i class="fa-solid fa-phone fa-lg text-white"></i>
+							<a class="text-decoration-none" href="tel:54 03496 23123"
+								><small class="text-white mx-2">+54 03496 23123</small></a
+							>
+						</div>
+						<div class="m-2">
+							<i class="fa-solid fa-envelope fa-lg text-white"></i>
+							<a
+								class="text-decoration-none"
+								href="mailto:lahuellitaveterinaria@company.com"
+								><small class="text-white mx-2"
+									>lahuellitaveterinaria@company.com</small
+								></a
+							>
+						</div>
+					</div>
+
+					<div
+						class="col-6 d-flex flex-column align-items-center justify-content-center">
+						<div>
+							<h5 class="text-white">
+								¡No te olvides de seguirnos en nuestras redes!
+							</h5>
+						</div>
+
+						<div class="d-flex align-items-center">
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-instagram fa-2xl text-white"></i
+								></a>
+							</div>
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-twitter fa-2xl text-white"></i
+								></a>
+							</div>
+							<div class="m-3">
+								<a href=""
+									><i class="fa-brands fa-linkedin fa-2xl text-white"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</footer>
+
+		<script type="module">
+			import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js';
+
+			var swiper = new Swiper('.slide-content', {
+				slidesPerView: 3,
+				spaceBetween: 25,
+				loop: true,
+				centerSlide: 'true',
+				fade: 'true',
+				grabCursor: 'true',
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+					dynamicBullets: true,
+				},
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				},
+
+				breakpoints: {
+					0: {
+						slidesPerView: 1,
+					},
+					520: {
+						slidesPerView: 2,
+					},
+					950: {
+						slidesPerView: 3,
+					},
+				},
+			});
+		</script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+			crossorigin="anonymous"></script>
 	</body>
 </html>
