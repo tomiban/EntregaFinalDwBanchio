@@ -301,6 +301,7 @@
 
 .card-img-top:hover {
 	scale: 1.2;
+	cursor: pointer;
 } 
 
 .slide-container{
